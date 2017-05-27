@@ -99,8 +99,8 @@ mc.scale(100,100,100,khayai+'.vtx[*]',p=[0,-0.3,chutmun])
 mc.select(yosuan,khayai,pkmb)
 bs = mc.blendShape(n='pkmb_bs')[0]
 mc.delete(yosuan,khayai)
-mc.addAttr(bs,ln='namae',nn=u'ชื่อญี่ปุ่น',dt='string')
-mc.setAttr(bs+'.namae',u'yosuan๑縮小๑4๐khayai๑巨大化๑4',typ='string')
+mc.addAttr(bs,ln='namae',nn=u'名前',dt='string')
+mc.setAttr(bs+'.namae',u'yosuan๑縮小๑2๐khayai๑巨大化๑1',typ='string')
 
 # สร้างข้อต่อ
 mc.select(cl=1)
