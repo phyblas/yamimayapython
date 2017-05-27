@@ -16,7 +16,7 @@ layer = app.activeDocument.layers.add();
 thaep = layer.pathItems.add();
 thaep.filled = 1;
 thaep.fillColor = si(237,15,84);
-thaep.stroke = 0;
+thaep.stroked = 0;
 
 var chut = [[160,476],[200,476],[200,36],[160,36]];
 chut.push(chut[0])
@@ -29,7 +29,7 @@ thaep.pathPoints[4].leftDirection = [chut[4][0]-120,chut[4][1]-50]
 thaep = layer.pathItems.add();
 thaep.filled = 1;
 thaep.fillColor = si(237,15,84);
-thaep.stroke = 0;
+thaep.stroked = 0;
 
 var chut = [[352,476],[312,476],[312,36],[352,36]];
 chut.push(chut[0])
