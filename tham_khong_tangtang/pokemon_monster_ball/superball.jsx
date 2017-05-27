@@ -1,4 +1,4 @@
-function si(d,k,n){ //ฟังก์ชันสำหรับกำหนดสี
+function si(d,k,n){
     var si = new RGBColor();
     si.red = d;
     si.green = k;
