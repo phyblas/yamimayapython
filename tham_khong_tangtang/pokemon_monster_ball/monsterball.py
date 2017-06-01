@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import maya.cmds as mc
 
 r = 5 # รัศมี
 
