@@ -22,4 +22,6 @@ http://3d.nicovideo.jp/works/td29931
 
 รูปตัวอย่าง
 
-![](https://i.pximg.net/img-original/img/2017/06/06/20/55/02/63253660_p0.jpg)
+![](http://img07.deviantart.net/e214/i/2017/149/9/5/_mmd_dl__escha_logy_no_atelier_no_craft__haifu_by_phyblas-dbaug1a.jpg)
+![](http://img06.deviantart.net/1e82/i/2017/151/e/5/_mmd_dl__escha_logy_no_atelier_no_reherun__haifu_by_phyblas-dbb4plt.jpg)
+![](http://img06.deviantart.net/a96c/i/2017/156/f/6/_mmd_dl__ayesha_no_atelier_no_furamu__haifu_by_phyblas-dbbmtgu.jpg)
