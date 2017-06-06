@@ -2,7 +2,7 @@
 import maya.cmds as mc
 import math,random
 
-phiu_sai = mc.shadingNode('blinn',asShader=1,n='phiu_sai') # ผิวหนามด้านล่าง
+phiu_sai = mc.shadingNode('blinn',asShader=1,n='phiu_sai')
 mc.setAttr(phiu_sai+'.ambc',0.5,0.5,0.5,typ='double3')
 phiu_hua = mc.duplicate(phiu_sai,n='phiu_hua')[0]
 phiu_namkhaeng = mc.duplicate(phiu_sai,n='phiu_namkhaeng')[0]
