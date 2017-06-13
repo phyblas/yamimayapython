@@ -4,16 +4,17 @@ import math,random
 random.seed(0)
 
 nai = 1
-    
+
+
 
 phiu_tuyen = mc.shadingNode('blinn',asShader=1,n='phiu_tuyen') # ผิวตัวตู้เย็น
 mc.setAttr(phiu_tuyen+'.ambc',0.5,0.5,0.5,typ='double3')
 mc.setAttr(phiu_tuyen+'.c',0.65,0.68,0.67,typ='double3')
 phiu_khoptu = mc.duplicate(phiu_tuyen,n='phiu_khoptu')[0] # ผิวขอบตู้เย็น
 mc.setAttr(phiu_khoptu+'.c',0.49,0.5,0.41,typ='double3')
-phiu_maelek = mc.duplicate(phiu_tuyen,n='phiu_maelek')[0] # ผิวแม่เหล็ก
+phiu_maelek = mc.duplicate(phiu_tuyen,n='phiu_maelek')[0] # ผิวแม่เหล็กเชื่อมตู้
 mc.setAttr(phiu_maelek+'.c',0.7,0.7,0.7,typ='double3')
-phiu_kha = mc.duplicate(phiu_tuyen,n='phiu_kha')[0] # ผิวขา
+phiu_kha = mc.duplicate(phiu_tuyen,n='phiu_kha')[0] # ผิวขาตู้
 mc.setAttr(phiu_kha+'.c',0.1,0.1,0.1,typ='double3')
 mc.setAttr(phiu_tuyen+'.sc',0.8,0.8,0.8,typ='double3')
 
@@ -32,7 +33,7 @@ mc.polyEditUV(sv=0.5,pv=0)
 
 
 
-# ส่วนแผงแม่เหล็กเชื่อมตู้
+# ส่วนแผงแม่เหล็กที่เชื่อมตู้กับประตู
 maelek = mc.polyCube(w=46,h=73,d=1,n='maelek')[0]
 mc.hyperShade(a=phiu_maelek)
 mc.move(0,3+36,0.5+40)
@@ -124,7 +125,7 @@ for i in range(mc.polyEvaluate(f=1)):
 mc.move(0.2,yok,y=1,r=1)
 mc.delete(lop)
 
-# ส่วนเชื่อมขาหน้าขวา
+# ส่วนเชื่อมขาหน้าขวาด้านล่าง
 chueamkha = mc.polyCube(w=3,h=0.5,d=10,ch=0,n='chueamkha')[0]
 mc.hyperShade(a=phiu_khoptu)
 mc.move(22.5,0.25+1.5,40)
@@ -430,6 +431,7 @@ if(nai):
     mc.skinPercent(sk,takraeng+'.vtx[0:%d]'%(n_vtx/2-1),tv=(kho1,1))
     mc.skinPercent(sk,takraeng+'.vtx[%d:%d]'%(n_vtx/2,n_vtx),tv=(kho2,1))
     
+    # กระดูกที่เปิดช่องแข็ง
     mc.select(cl=1)
     kho = mc.joint(p=[0,5+69,33.5+0.2]),mc.joint(p=[0,5+69-12,33.5+0.2])
     sk = mc.skinCluster(kho,chongkhaeng)[0]
