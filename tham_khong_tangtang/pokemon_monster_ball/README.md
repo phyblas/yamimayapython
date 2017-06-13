@@ -6,9 +6,9 @@
 
 โค้ด .jsx ที่แนบมาด้วยไว้ใช้กับ illustrator ไว้สร้างเท็กซ์เจอร์สำหรับซูเปอร์บอล
 
-ไฟล์ที่แปลงเป็น .pmx แล้วสามารถโหลดได้ที่
-https://bowlroll.net/file/137831
+ไฟล์ที่แปลงเป็น .pmx แล้วสามารถโหลดและดูภาพตัวอย่างได้ที่
+http://3d.nicovideo.jp/works/td29898
 
 รูปตัวอย่าง
 
-![](https://bowlroll.net/file_thumbnail/d/7/4/d74f571d02ce2b5ff138209ce39e5a0b1309582a137831big.jpg)
+![](http://img15.deviantart.net/d5df/i/2017/147/5/e/_mmd_dl__pokemon_ball__haifu_by_phyblas-dbal947.jpg)

@@ -101,7 +101,7 @@ mc.select(yosuan,khayai,pkmb)
 bs = mc.blendShape(n='pkmb_bs')[0]
 mc.delete(yosuan,khayai)
 mc.addAttr(bs,ln='namae',nn=u'名前',dt='string')
-mc.setAttr(bs+'.namae',u'yosuan๑縮小๑2๐khayai๑巨大化๑1',typ='string')
+mc.setAttr(bs+'.namae',u'%s๑縮小๑2๐%s๑巨大化๑1'%(yosuan,khayai),typ='string')
 
 # สร้างข้อต่อ
 mc.select(cl=1)
