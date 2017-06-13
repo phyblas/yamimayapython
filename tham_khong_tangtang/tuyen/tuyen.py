@@ -3,6 +3,7 @@ import maya.cmds as mc
 import math,random
 random.seed(0)
 
+nai = 1
     
 
 phiu_tuyen = mc.shadingNode('blinn',asShader=1,n='phiu_tuyen') # ผิวตัวตู้เย็น
@@ -154,7 +155,7 @@ mc.scale(0.75,kha[0],y=1,p=[0,0,0])
 
 
 
-if(0):
+if(nai):
     phiu_naitu = mc.duplicate(phiu_tuyen,n='phiu_naitu')[0] # ผิวด้านในตู้เย็น
     mc.setAttr(phiu_naitu+'.c',0.86,0.86,0.82,typ='double3')
     phiu_naipratu = mc.duplicate(phiu_naitu,n='phiu_naipratu')[0] # ผิวด้านในประตู
