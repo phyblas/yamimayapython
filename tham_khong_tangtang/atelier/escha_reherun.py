@@ -35,7 +35,7 @@ for i in range(mc.polyEvaluate(v=1)):
     fu = 1+0.1*math.sin(6*phi)*math.cos(t[1])
     mc.scale(fu+random.uniform(-0.05,0.05),1.05,fu+random.uniform(0,0.1))
     
-hua = mc.polyCylinder(r=2.5,h=3,sx=24,sy=1,sz=1,n='hua')
+hua = mc.polyCylinder(r=2.5,h=3,sx=24,sy=1,sz=1,n='hua')[0]
 mc.hyperShade(a=phiu_hua)
 mc.move(0,7)
 mc.delete(hua+'.f[24:47]')
