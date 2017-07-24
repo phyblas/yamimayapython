@@ -19,7 +19,7 @@ http://3d.nicovideo.jp/works/td30332
 
 รูปตัวอย่าง
 
-![](http://phyblas.deviantart.com/art/MMD-DL-windows-screensaver-fuu-meikyuu-haifu-694206259)
+![](http://img05.deviantart.net/7eba/i/2017/203/a/d/_mmd_dl__windows_screensaver_fuu_meikyuu__haifu_by_phyblas-dbhb8z7.jpg)
 
 # wongkot3.py
 ทางวงกตที่เอาข้อดีของสองอันแรกมารวมกัน
