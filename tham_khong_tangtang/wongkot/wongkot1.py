@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import maya.cmds as mc
-import math,random
 
 nx = 9 # จำนวนช่อง
 nz = 9
