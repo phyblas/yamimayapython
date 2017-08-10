@@ -23,3 +23,13 @@ http://3d.nicovideo.jp/works/td30332
 
 # wongkot3.py
 ทางวงกตที่เอาข้อดีของสองอันแรกมารวมกัน
+
+# wongkot4.py
+ทางวงกตที่มีบรรยากาศเหมือนวัดหรือวังจีน
+
+ไฟล์ที่แปลงเป็น .pmx แล้วสามารถโหลดได้ที่
+http://3d.nicovideo.jp/works/td30402
+
+รูปตัวอย่าง
+
+![](http://pre07.deviantart.net/2753/th/pre/i/2017/211/3/6/_mmd_dl__youwa_meikyuu__yonghe_migong___haifu_by_phyblas-dbi8gt8.jpg)

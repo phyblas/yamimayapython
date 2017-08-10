@@ -47,7 +47,7 @@ phanang = []
 for i in range(nx+1):
     for j in range(nz):
         if(i==0 and j==0):
-            phanang += [mc.polyPlane(w=w,h=2,sx=1,sy=1,ax=[1,0,0],n='p0')[0]]
+            phanang += [mc.polyPlane(w=w,h=2,sx=1,sy=1,ax=[1,0,0])[0]]
             mc.polyProjection(phanang[-1]+'.f[*]',rx=0,ry=90,rz=0,psu=w/2.,psv=w/2.)
         else:
             phanang += mc.duplicate(phanang[0])
@@ -55,7 +55,7 @@ for i in range(nx+1):
 for i in range(nx):
     for j in range(nz+1):
         if(i==0 and j==0):
-            phanang += [mc.polyPlane(w=w,h=2,sx=1,sy=1,ax=[0,0,1],n='phanang1')[0]]
+            phanang += [mc.polyPlane(w=w,h=2,sx=1,sy=1,ax=[0,0,1])[0]]
             mc.polyProjection(phanang[-1]+'.f[*]',rx=0,ry=0,rz=0,psu=w/2.,psv=w/2.)
         else:
             phanang += mc.duplicate(phanang[(nx+1)*nz])

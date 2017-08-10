@@ -531,7 +531,7 @@ mc.scale(1,184.5/221,81./83,p=[0,0,170])
 lop = [mc.duplicate(pratu)[0],mc.duplicate(pratu)[0]]
 mc.move(35.5,lop[1]+'.f[1]',y=1,r=1)
 mc.move(185+2,lop[1]+'.f[3]',y=1)
-mc.move(10,lop[1]+'.f[4]',x=1,r=1)
+mc.move(12,lop[1]+'.f[4]',x=1,r=1)
 khoppratu = mc.polyCBoolOp(khoppratu,lop,op=2,ch=0)[0]
 mc.polyExtrudeFacet(khoppratu+'.f[32:35]',sy=25.5/33.5,sz=74./82)
 bonpratu = mc.polyCube(w=12.5,h=25.5,d=4)[0]
