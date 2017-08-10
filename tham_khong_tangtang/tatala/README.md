@@ -17,6 +17,6 @@
 
 รูปตัวอย่าง
 
-![](http://img09.deviantart.net/5701/i/2017/222/4/5/_mmd_dl__tatala___cinedkeran__pinbanzhou___haifu_by_phyblas-dbjj8q3.jpg)
+![](https://phyblas.hinaboshi.com/rup/yami/2017/j09.jpg)
 
 ไฟล์ที่แปลงเป็น .pmx แล้วโหลดได้ใน http://3d.nicovideo.jp/works/td30494
