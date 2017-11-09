@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import maya.cmds as mc
 import numpy as np
-import math
-import os
+import math,os
 
 def svsf(r,h,chue):
     n = len(h)
@@ -167,6 +166,8 @@ for s in sl:
         to = s
 
 mc.group(to,kaoi,n='to_kaoi_hinon')
+
+
 
 # ใส่กระดูก สำหรับ mmd
 mc.select(cl=1)

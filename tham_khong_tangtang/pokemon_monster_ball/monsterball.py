@@ -12,7 +12,7 @@ phiu_pum = mc.shadingNode('blinn',asShader=1,n='phiu_pum')
 mc.setAttr(phiu_pum+'.c',1,1,1,typ='double3')
 phiu_bon = mc.shadingNode('blinn',asShader=1,n='phiu_bon')
 mc.setAttr(phiu_bon+'.c',1,0,0,typ='double3')
-#mc.setAttr(phiu_bon+'.it',0.5,0.5,0.5,typ='double3') # ทำให้โปร่งใส
+mc.setAttr(phiu_bon+'.it',0.5,0.5,0.5,typ='double3') # ทำให้โปร่งใส
 
 # ใส่แอมเบียนต์
 for mat in [phiu_bon,phiu_lang,phiu_pum]:
@@ -63,7 +63,7 @@ mc.delete(pum+'.f[24:47]')
 n_na_pum = mc.polyEvaluate(pum,v=1) # จำนวนหน้าของส่วนปุ่ม
 
 # รวมส่วนดำตรงกลางกับผิวด้านบน
-bon = mc.polyUnite(bon,pum,nai,ch=0)[0]
+bon = mc.polyUnite(bon,pum,klang,ch=0)[0]
 
 # หา z จุดหมุน
 n_vtx_bon = mc.polyEvaluate(bon,v=1) # จำนวนจุดส่วนบนที่ต้องการให้เคลื่อนไหวทั้งหมด
