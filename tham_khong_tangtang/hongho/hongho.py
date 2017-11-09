@@ -808,7 +808,7 @@ for a,b,c in [(6.3,61.75,-0.5),(14.8,51,2),(39.,23.75,13)]:
     mc.polyExtrudeFacet(ltz=-1.5)
     mc.select(linchak[-1]+'.f[1]')
     mc.polyExtrudeFacet(off=0.5)
-    mc.polyExtrudeFacet(ltz=-4.8)
+    mc.polyExtrudeFacet(ltz=1.5-a)
     mc.polyBevel([linchak[-1]+'.e[%d]'%i for i in [36,41]],o=0.8,sg=3)
     mc.polyBevel([linchak[-1]+'.e[%d]'%i for i in [24,27]],o=0.5)
 
