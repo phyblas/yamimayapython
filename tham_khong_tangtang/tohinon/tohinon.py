@@ -142,11 +142,12 @@ h += [44]
 svsf(r,h,'kaoihinon')
 
 # เขียนไฟล์ .obj เสร็จแล้วอ่าน แล้วก็ลบ
-with open('tohinon.obj','w') as f:
+chuefile = os.path.join(os.path.expanduser('~'),'tohinon.obj')
+with open(chuefile,'w') as f:
     f.write(sv+'\n'+svt+'\n'+sf)
 o = mc.ls(typ='transform')
-mc.file('tohinon.obj',i=1)
-os.remove('tohinon.obj')
+mc.file(chuefile,i=1)
+os.remove(chuefile)
 sl = [x for x in mc.ls(typ='transform') if x not in o]
 kaoi = []
 for s in sl:
