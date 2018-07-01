@@ -425,7 +425,8 @@ mc.hyperShade(a=phiu_muet)
 mc.move(99,108,ruplak)
 
 ruplak2 = mc.duplicate(ruplak)[0]
-mc.scale(1,1,-1,ruplak2)
+mc.scale(1,1,-1,ruplak2,p=[0,0,170])
+mc.move(0,0,-340,ruplak2+'.f[*]',r=1)
 mc.move(0,0,340,ruplak2,r=1)
 
 
