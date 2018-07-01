@@ -1,5 +1,7 @@
 แบบจำลองลูกบิดรูบิกธรรมดา ไม่มีอะไรเป็นพิเศษ
 
+กว้างยาวสูง 5.7×5.7×5.7
+
 ไฟล์ lainalukbit.py คือโปรแกรมสำหรับทำเท็กซ์เจอร์ลวดลายหน้าต่างๆ
 
 ไฟล์ .jpg ที่แนบมาด้วยเป็นเท็กซ์เจอร์ของหน้าต่างๆ สามารถเปลี่ยนรูปเป็นตามที่ต้องการได้
@@ -9,4 +11,4 @@ http://3d.nicovideo.jp/works/td36927
 
 รูปตัวอย่าง
 
-![](https://img00.deviantart.net/e007/i/2018/182/4/d/_mmd_dl__rubik_cube__haifu_by_phyblas-dcfyfed.jpg)
+![](https://img00.deviantart.net/6ae9/i/2018/182/7/4/_mmd_dl__rubik_cube__haifu_by_phyblas-dcfyfed.jpg)
