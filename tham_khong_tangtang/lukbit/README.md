@@ -9,4 +9,4 @@ http://3d.nicovideo.jp/works/td36927
 
 รูปตัวอย่าง
 
-![](https://www.deviantart.com/phyblas/art/MMD-DL-rubik-cube-haifu-752394613)
+![](https://img00.deviantart.net/e007/i/2018/182/4/d/_mmd_dl__rubik_cube__haifu_by_phyblas-dcfyfed.jpg)
