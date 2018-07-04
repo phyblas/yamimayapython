@@ -14,7 +14,7 @@ for i in range(1,7):
     phiu.append(mc.duplicate(phiu_dam,n='phiu_na%d'%i)[0])
     lai_na = mc.shadingNode('file',at=1,n='lai_na%d'%i)
     mc.connectAttr(lai_na+'.oc',phiu[i]+'.c')
-    mc.setAttr(lai_na+'.ftn','/Users/patn/Dropbox/lukbit/na%d.jpg'%i,typ='string')
+    mc.setAttr(lai_na+'.ftn','lukbit/na%d.jpg'%i,typ='string')
 
 k = 5.6 # ขนาดของลูกบิด
 lukbit = [mc.polyCube(w=k/3,h=k,d=k,sx=1,sy=3,sz=3)[0]] # ส่วนตรงกลาง

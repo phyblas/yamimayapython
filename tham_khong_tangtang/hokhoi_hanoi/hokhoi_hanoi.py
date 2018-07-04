@@ -13,36 +13,38 @@ def sainun(m,f,n):
     ple = mc.shadingNode('place2dTexture',au=1)
     mc.defaultNavigation(ce=1,s=ple,d=lainun)
 
+folder = 'hokhoi_hanoi/' # ที่เก็บไฟล์เท็กซ์เจอร์
+
 # ผิวส่วนฐาน
 phiu_than = mc.shadingNode('blinn',asShader=1,n='phiu_than')
 mc.setAttr(phiu_than+'.ambc',0.5,0.5,0.5,typ='double3')
 mc.setAttr(phiu_than+'.sro',0.3)
 lai_than = mc.shadingNode('file',at=1,n='lai_than')
 mc.connectAttr(lai_than+'.oc',phiu_than+'.c')
-mc.setAttr(lai_than+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_than.jpg',typ='string')
-sainun(phiu_than,'/Users/patn/Dropbox/hokhoi_hanoi/nun_than.jpg','lai_than')
+mc.setAttr(lai_than+'.ftn',folder+'lai_than.jpg',typ='string')
+sainun(phiu_than,folder+'nun_than.jpg','lai_than')
 
 # ผิวส่วนฐานที่มีลานอิฐ
 phiu_thanit = mc.duplicate(phiu_than,n='phiu_thanit')[0]
 lai_thanit = mc.shadingNode('file',at=1,n='lai_thanit')
 mc.connectAttr(lai_thanit+'.oc',phiu_thanit+'.c')
-mc.setAttr(lai_thanit+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_thanit.jpg',typ='string')
-sainun(phiu_thanit,'/Users/patn/Dropbox/hokhoi_hanoi/nun_thanit.jpg','lai_nunthanit')
+mc.setAttr(lai_thanit+'.ftn',folder+'lai_thanit.jpg',typ='string')
+sainun(phiu_thanit,folder+'nun_thanit.jpg','lai_nunthanit')
 
 # ผิวเสาหลัก
 phiu_sao = mc.duplicate(phiu_than,n='phiu_sao')[0]
 mc.setAttr(phiu_sao+'.sc',0.2,0.2,0.2,typ='double3')
 lai_sao = mc.shadingNode('file',at=1,n='lai_sao')
 mc.connectAttr(lai_sao+'.oc',phiu_sao+'.c')
-mc.setAttr(lai_sao+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_mai.jpg',typ='string')
+mc.setAttr(lai_sao+'.ftn',folder+'lai_mai.jpg',typ='string')
 
 # ผิวรั้วหอคอย
 phiu_rua = mc.duplicate(phiu_than,n='phiu_rua')[0]
 mc.setAttr(phiu_rua+'.sc',0.2,0.2,0.2,typ='double3')
 lai_rua = mc.shadingNode('file',at=1,n='lai_rua')
 mc.connectAttr(lai_rua+'.oc',phiu_rua+'.c')
-mc.setAttr(lai_rua+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_mai.jpg',typ='string')
-sainun(phiu_rua,'/Users/patn/Dropbox/hokhoi_hanoi/nun_ruamai.jpg','nun_mai')
+mc.setAttr(lai_rua+'.ftn',folder+'lai_mai.jpg',typ='string')
+sainun(phiu_rua,folder+'nun_ruamai.jpg','nun_mai')
 
 # ผิวเสาที่มุม
 phiu_saomum = mc.duplicate(phiu_than,n='phiu_saomum')[0]
@@ -61,8 +63,8 @@ mc.setAttr(phiu_khopho+'.c',0.65,0.34,0.35,typ='double3')
 phiu_phanang = mc.duplicate(phiu_than,n='phiu_phanang')[0]
 lai_phanang = mc.shadingNode('file',at=1,n='lai_phanang')
 mc.connectAttr(lai_phanang+'.oc',phiu_phanang+'.c')
-mc.setAttr(lai_phanang+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_phanangit.jpg',typ='string')
-sainun(phiu_phanang,'/Users/patn/Dropbox/hokhoi_hanoi/nun_phanangit.jpg','nun_phanang')
+mc.setAttr(lai_phanang+'.ftn',folder+'lai_phanangit.jpg',typ='string')
+sainun(phiu_phanang,folder+'nun_phanangit.jpg','nun_phanang')
 
 # ผิวขอบประตู
 phiu_khoppratu = mc.duplicate(phiu_than,n='phiu_khoppratu')[0]
@@ -73,30 +75,30 @@ mc.connectAttr(lai_hingranite+'.oc',phiu_khoppratu+'.c')
 phiu_banpratu = mc.duplicate(phiu_than,n='phiu_banpratu')[0]
 mc.setAttr(phiu_banpratu+'.sc',0.2,0.2,0.2,typ='double3')
 lai_banpratu = mc.shadingNode('file',at=1,n='lai_banpratu')
-mc.setAttr(lai_banpratu+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_banpratu.png',typ='string')
+mc.setAttr(lai_banpratu+'.ftn',folder+'lai_banpratu.png',typ='string')
 mc.connectAttr(lai_banpratu+'.oc',phiu_banpratu+'.c')
-sainun(phiu_banpratu,'/Users/patn/Dropbox/hokhoi_hanoi/nun_banpratu.png','nun_banpratu')
+sainun(phiu_banpratu,folder+'nun_banpratu.png','nun_banpratu')
 
 # ผิวขอบหน้าต่าง
 phiu_khopnatang = mc.duplicate(phiu_than,n='phiu_khopnatang')[0]
 mc.setAttr(phiu_khopnatang+'.sc',0.7,0.7,0.7,typ='double3')
 mc.connectAttr(lai_hingranite+'.oc',phiu_khopnatang+'.c')
-sainun(phiu_khopnatang,'/Users/patn/Dropbox/hokhoi_hanoi/nun_khopnatang.png','nun_khopnatang')
+sainun(phiu_khopnatang,folder+'nun_khopnatang.png','nun_khopnatang')
 
 # ผิวบานหน้าต่าง
 phiu_bannatang = mc.duplicate(phiu_than,n='phiu_bannatang')[0]
 mc.setAttr(phiu_bannatang+'.sc',0.2,0.2,0.2,typ='double3')
 lai_bannatang = mc.shadingNode('file',at=1,n='lai_bannatang')
-mc.setAttr(lai_bannatang+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_bannatang.png',typ='string')
+mc.setAttr(lai_bannatang+'.ftn',folder+'lai_bannatang.png',typ='string')
 mc.connectAttr(lai_bannatang+'.oc',phiu_bannatang+'.c')
-sainun(phiu_bannatang,'/Users/patn/Dropbox/hokhoi_hanoi/nun_bannatang.png','nun_bannatang')
+sainun(phiu_bannatang,folder+'nun_bannatang.png','nun_bannatang')
 
 # ผิวพื้นหอคอย
 phiu_phuenho = mc.duplicate(phiu_than,n='phiu_phuenho')[0]
 lai_phuenho = mc.shadingNode('file',at=1,n='lai_phuenho')
 mc.connectAttr(lai_phuenho+'.oc',phiu_phuenho+'.c')
-mc.setAttr(lai_phuenho+'.ftn','/Users/patn/Dropbox/hokhoi_hanoi/lai_phuenit.jpg',typ='string')
-sainun(phiu_phuenho,'/Users/patn/Dropbox/hokhoi_hanoi/nun_phuenit.jpg','nun_phuenho')
+mc.setAttr(lai_phuenho+'.ftn',folder+'lai_phuenit.jpg',typ='string')
+sainun(phiu_phuenho,folder+'nun_phuenit.jpg','nun_phuenho')
 
 # ผิวเสารั้วหอคอย
 phiu_saorua = mc.duplicate(phiu_than,n='phiu_saorua')[0]
